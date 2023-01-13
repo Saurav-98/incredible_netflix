@@ -57,16 +57,19 @@
 }
 
 .loginScreen__body {
-  width: 100%;
+  /* width: 100%; */
   z-index: 10;
   color: #fff;
   padding: 2rem;
-  position: absolute;
+
   top: 30%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  display: inline-block;
+  /* display: inline-block; */
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 .loginScreen__input {
