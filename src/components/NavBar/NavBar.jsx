@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './NavBar.css';
 
 const NavBar = () => {
+  const [showNav, setShowNav] = useState(false);
+
+  const transitionNavBar = () => {
+    if (window.scrollY > 150) {
+      setShowNav(true);
+    } else {
+      setShowNav(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener('scroll', transitionNavBar);
+    // Use Effect CleanUp function
+    return () => window.removeEventListener('scroll', transitionNavBar);
+  }, []); // empty Dependencies Array for one time rendering on refresh
+
   return (
-    <div className="nav nav__black">
+    <div className={`nav ${showNav === true ? 'nav__black' : ''}`}>
       <div className="nav__contents">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
