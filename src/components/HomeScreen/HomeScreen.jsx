@@ -1,4 +1,5 @@
 import React from 'react';
+import Banner from '../Banner/Banner';
 import NavBar from '../NavBar/NavBar';
 import './HomeScreen.css';
 
@@ -9,6 +10,7 @@ const HomeScreen = () => {
       <NavBar />
 
       {/* BANNER */}
+      <Banner />
       {/* ROWS */}
     </div>
   );
