@@ -1,0 +1,91 @@
+.loginScreen {
+  position: relative;
+  height: 100%;
+  background: url('https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/netflixteaser.png')
+    center no-repeat;
+  background-size: cover;
+}
+
+.loginScreen__logo {
+  position: fixed;
+  left: 0;
+  width: 15rem;
+  object-fit: contain;
+  padding-left: 2rem;
+  cursor: pointer;
+}
+
+.loginScreen__signIn {
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #e50914;
+  cursor: pointer;
+  border: none;
+}
+
+.loginScreen__gradient {
+  width: 100%;
+  z-index: 5;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.loginScreen__body h1 {
+  font-size: 5rem;
+
+  margin-bottom: 2rem;
+}
+.loginScreen__body h2 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.loginScreen__body h3 {
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+
+.loginScreen__body {
+  width: 100%;
+  z-index: 10;
+  color: #fff;
+  padding: 2rem;
+  position: absolute;
+  top: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: inline-block;
+}
+
+.loginScreen__input {
+  padding: 2rem;
+  margin-top: 2rem;
+}
+.loginScreen__input > form > input {
+  padding: 1rem;
+  outline-width: 0;
+  height: 5rem;
+  width: 30%;
+  border: none;
+  max-width: 60rem;
+}
+.loginScreen__getStarted {
+  padding: 1.6rem 2rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #e50914;
+  border: none;
+  cursor: pointer;
+}
